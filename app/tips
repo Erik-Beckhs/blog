@@ -1,0 +1,19 @@
+para realizar el refresh y seed en una sola linea
+php artisan migrate:refresh --seed
+
+para crear una migracion para tablas de relacion muchos a muchos
+php artisan make:migration create_post_tag_table --create=post_tag
+estas ultimas son el nombre de las tablas en orden alfabetico y en singular
+
+si nos da error lo solucionamos con composer dump_autoload
+
+en lugar de php artisan make:auth --views
+usar 
+1. composer require laravel/ui
+2. php artisan ui:auth --views  
+3. crear carpeta Auth dentro de la carpeta Http/Controllers
+4. ahi dentro crear LoginController.php y RegisterController.php
+5. el codigo de estos encontrarlo con el buscador son .stub
+
+(todo esto por que make:auth esta obsoleto a partir de la version 6 de laravel)
+
